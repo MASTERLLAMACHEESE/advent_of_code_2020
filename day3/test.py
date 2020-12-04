@@ -11,7 +11,7 @@ class Node():
         self.tree_count_1_2 = 0
 ##---------part1------------------##
     def read_file(self):
-        f = open("input.txt", "r")
+        f = open("test.txt", "r")
         print("file opened")
         content = f.readlines()
         for line in content:
@@ -20,7 +20,7 @@ class Node():
     def find_path(self):
         place_count = 3
         for line in range(len(self.input)):
-            if line == 322:
+            if line == 10:
                 current_line = self.input[line]
                 print ("On last line tree count is:", self.tree_count)
                 break
@@ -36,7 +36,7 @@ class Node():
             #print ("tree count: ", self.tree_count)
             #print("-----------")
             place_count = place_count + 3
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]-1
 
@@ -45,7 +45,7 @@ class Node():
     def find_path_1_1(self):
         place_count = 1
         for line in range(len(self.input)):
-            if line == 322:
+            if line == 10:
                 current_line = self.input[line]
                 print ("1-1 On last line tree count is:", self.tree_count_1_1)
                 break
@@ -61,14 +61,14 @@ class Node():
             #print ("tree count: ", self.tree_count_1_1)
             #print("-----------")
             place_count = place_count + 1
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]-1
 
     def find_path_3_1(self):
         place_count = 3
         for line in range(len(self.input)):
-            if line == 322:
+            if line == 10:
                 current_line = self.input[line]
                 print ("3-1 On last line tree count is:", self.tree_count_3_1)
                 break
@@ -84,7 +84,7 @@ class Node():
             #print ("tree count: ", self.tree_count_3_1)
             #print("-----------")
             place_count = place_count + 3
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]-1
 
@@ -92,7 +92,7 @@ class Node():
     def find_path_5_1(self):
         place_count = 5
         for line in range(len(self.input)):
-            if line == 322:
+            if line == 10:
                 current_line = self.input[line]
                 print ("5-1 On last line tree count is:", self.tree_count_5_1)
                 break
@@ -108,7 +108,7 @@ class Node():
             #print ("tree count: ", self.tree_count_3_1)
             #print("-----------")
             place_count = place_count + 5
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]-1
                 #print ("place count over: ", place_count)
@@ -116,7 +116,7 @@ class Node():
     def find_path_7_1(self):
         place_count = 7
         for line in range(len(self.input)):
-            if line == 322:
+            if line == 10:
                 current_line = self.input[line]
                 print ("7-1 On last line tree count is:", self.tree_count_7_1)
                 break
@@ -132,7 +132,7 @@ class Node():
             #print ("tree count: ", self.tree_count_3_1)
             #print("-----------")
             place_count = place_count + 7
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]-1
                 #print ("place count over:  ", place_count)
@@ -140,7 +140,7 @@ class Node():
     def find_path_1_2(self):
         place_count = 1
         for line in range(len(self.input)):
-            if (line*2+2) == 322:
+            if (line*2+2) == 10:
                 print ("1-2 On last line tree count is:", self.tree_count_1_2)
                 break
             current_line = self.input[line*2+2]
@@ -155,7 +155,7 @@ class Node():
             #print ("tree count: ", self.tree_count_1_2)
             #print("-----------")
             place_count = place_count + 1
-            if place_count >= 31:
+            if place_count >= 11:
                 temp = [int(i) for i in str(place_count)]
                 place_count = temp[1]
 

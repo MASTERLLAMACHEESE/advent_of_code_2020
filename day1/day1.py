@@ -35,7 +35,7 @@ class Node():
             if comp in self.in_list[i+1:]:
                 print("Solution Found: {} and {}, the sum of is {}".format(value, comp,(value+comp)))
                 print("{} * {} = {}".format(value, comp, (value*comp)))
-##---------part1------------------##
+##---------part2------------------##
 
     def find_three_nums(self):
         target_value = 2020
