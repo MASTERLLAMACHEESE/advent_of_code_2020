@@ -63,7 +63,7 @@ class Node():
             place_count = place_count + 1
             if place_count >= 31:
                 temp = [int(i) for i in str(place_count)]
-                place_count = temp[1]
+                place_count = temp[1]-1
 
     def find_path_single(self,row, place,trees):
         place_count = place

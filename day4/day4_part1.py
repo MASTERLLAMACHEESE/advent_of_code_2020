@@ -15,7 +15,7 @@ class Node():
         content = f.readlines()
         for line in content:
             if line == '\n':
-                #print ("-----------------")
+                print ("-----------------")
                 count_1 = 0
                 count_2 = 0
                 data_8 = True
@@ -46,16 +46,16 @@ class Node():
                 if count_1 == 8:
                     self.valid_count = self.valid_count + 1
                     data_8 = False
-                    #print("Count_1 data_8: ", count_1)
-                    #print("Count_2 data_8: ", count_2)
-                    #print ("Valid passport count mid work: ", self.valid_count)
+                    print("Count_1 data_8: ", count_1)
+                    print("Count_2 data_8: ", count_2)
+                    print ("Valid passport count mid work: ", self.valid_count)
                     count_1 = 0
                     count_2 = 0
                 if count_2 == 7 and data_8 == True:
                     self.valid_count = self.valid_count + 1
-                    #print("Count_1: ", count_1)
-                    #print("Count_2: ", count_2)
-                    #print ("Valid passport count mid work: ", self.valid_count)
+                    print("Count_1: ", count_1)
+                    print("Count_2: ", count_2)
+                    print ("Valid passport count mid work: ", self.valid_count)
                     count_1 = 0
                     count_2 = 0
                     data_8 = False
