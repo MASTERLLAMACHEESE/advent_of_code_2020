@@ -21,6 +21,7 @@ class Node():
                 count_2 = 0
                 data_8 = True
             else:
+
                 if "byr" in line:
                     begin_index = line.find('byr') + 4
                     value_string = line[begin_index:begin_index+4]
@@ -30,6 +31,8 @@ class Node():
                         count_2 = count_2 + 1
                         #print("Count_1: ", count_1)
                         #print("Count_2: ", count_2)
+
+
                 if "iyr" in line:
                     begin_index = line.find('iyr') + 4
                     value_string = line[begin_index:begin_index+4]
@@ -39,6 +42,8 @@ class Node():
                         count_2 = count_2 + 1
                         #print("Count_1: ", count_1)
                         #print("Count_2: ", count_2)
+
+
                 if "eyr" in line:
                     begin_index = line.find('eyr') + 4
                     value_string = line[begin_index:begin_index+4]
@@ -48,6 +53,8 @@ class Node():
                         count_2 = count_2 + 1
                         #print("Count_1: ", count_1)
                         #print("Count_2: ", count_2)
+
+
                 if "hgt" in line:
                     data_str = []
                     data_str_fix = ""
@@ -56,8 +63,6 @@ class Node():
                     while True:
                         data_str.append(line[(begin_index+4)+i])
                         if len(line) == (begin_index+i+5):
-                            break
-                        if line[begin_index+i+4] == "\n":
                             break
                         if line[begin_index+i+5] == " ":
                             break
@@ -76,6 +81,8 @@ class Node():
                             count_1 = count_1 + 1
                             count_2 = count_2 + 1
                             #print ("second", data_str_fix)
+
+
                 if "hcl" in line:
                     data_str_1 = []
                     data_str_fix_1 = ""
@@ -84,8 +91,6 @@ class Node():
                     while True:
                         data_str_1.append(line[(begin_index+4)+i])
                         if len(line) == (begin_index+i+5):
-                            break
-                        if line[begin_index+i+4] == "\n":
                             break
                         if line[begin_index+i+5] == " " or line[begin_index+i+5] == "\n" :
                             break
@@ -97,6 +102,8 @@ class Node():
                         if data_str_fix_1[0] == "#":
                             count_1 = count_1 + 1
                             count_2 = count_2 + 1
+
+
                 if "ecl" in line:
                     begin_index = line.find('ecl') + 4
                     value_string = line[begin_index:begin_index+3]
@@ -105,6 +112,8 @@ class Node():
                         count_2 = count_2 + 1
                         #print("Count_1: ", count_1)
                         #print("Count_2: ", count_2)
+
+
                 if "pid" in line:
                     data_str_2 = []
                     data_str_fix_2 = ""
@@ -113,8 +122,6 @@ class Node():
                     while True:
                         data_str_2.append(line[(begin_index+4)+i])
                         if len(line) == (begin_index+i+5):
-                            break
-                        if line[begin_index+i+4] == "\n":
                             break
                         if line[begin_index+i+5] == " ":
                             break
