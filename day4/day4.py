@@ -135,6 +135,8 @@ class Node():
                         #print ("yeet")
                         count_1 = count_1 + 1
                         count_2 = count_2 + 1
+
+
                 if "cid" in line:
                     count_1 = count_1 + 1
                 if count_1 == 8:
